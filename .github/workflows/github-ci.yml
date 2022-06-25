@@ -17,6 +17,8 @@ jobs:
         run: mvn compile
       - name: Run tests with Maven
         run: mvn test
+      - name: Create Package
+        run: mvn package
         
 
       
