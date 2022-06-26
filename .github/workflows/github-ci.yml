@@ -19,6 +19,11 @@ jobs:
         run: mvn test
       - name: Create Package
         run: mvn package
+      - name: upload build
+        uses: actions/upload-artifact@v3
+        with: 
+          name: compiled-files
+          path: target
         
 
       
