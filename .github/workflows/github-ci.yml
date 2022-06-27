@@ -34,7 +34,8 @@ jobs:
         uses: actions/download-artifact@v3
         with: 
           name: compiled-files
-      
+      - name:  deploy-to-tomcat
+        run: cp /home/github-runner/_work/spwGame/spwGame/game2048.war /usr/local/tomcat/webapps
             
     
         
