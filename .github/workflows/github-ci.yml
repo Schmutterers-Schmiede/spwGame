@@ -29,6 +29,9 @@ jobs:
   deploy:
     runs-on: self-hosted
     needs: btp
+    environment: 
+      name: spw-game-env
+      url: http://localhost:8081/game2048
     steps:
       - name: get-artifact
         uses: actions/download-artifact@v3
